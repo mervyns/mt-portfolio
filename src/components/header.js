@@ -1,42 +1,25 @@
-import { Link } from 'gatsby'
-import PropTypes from 'prop-types'
 import React from 'react'
 
-const Header = ({ siteTitle }) => (
-  <div
-    style={{
-      background: 'rebeccapurple',
-      marginBottom: '1.45rem',
-    }}
-  >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </div>
+import AnchorLink from 'react-anchor-link-smooth-scroll'
+
+const Header = () => (
+  <header>
+    <nav>
+      <div className="container">
+        <div className="grid">
+          <div className="column-xs-7 column-md-9">
+            <span>Mervyn Tan</span>
+          </div>
+          <div className="column-xs-5 column-md-3">
+            <ul>
+              <li><AnchorLink href="#work">Work</AnchorLink></li>
+              <li><AnchorLink href="#about">About</AnchorLink></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: '',
-}
 
 export default Header

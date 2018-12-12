@@ -3,17 +3,13 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
-import Background from './background'
-import Header from './header'
-import Footer from './footer'
-
 import './layout.scss'
 import 'typeface-assistant'
 
 const Layout = ({ children, data }) => (
   <StaticQuery
     query={graphql`
-      query SiteTitleQuery {
+      query NotFoundSiteTitleQuery {
         site {
           siteMetadata {
             title
@@ -32,12 +28,9 @@ const Layout = ({ children, data }) => (
         >
           <html lang="en" />
         </Helmet>
-        <Background />
-        <Header />
-        <main className="page-content">
+        <main className="no-page-content">
           {children}
         </main>
-        <Footer />
       </>
     )}
   />
