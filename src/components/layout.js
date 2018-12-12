@@ -32,7 +32,6 @@ const Layout = ({ children, data }) => (
         >
           <html lang="en" />
         </Helmet>
-        <Background />
         <Header />
         <main className="page-content">
           {children}

@@ -2,6 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import Layout from '../components/layout'
+import Background from '../components/background'
 
 class Index extends React.Component {
   render() {
@@ -42,21 +43,21 @@ class Index extends React.Component {
 
     const Blog = [
       {
-        title: 'How to create an animated logo with SVG and CSS animations',
+        title: 'Blog Post 1',
         date: 'August 2018',
-        link: 'https://blog.fullstackdigital.com/how-to-create-an-animated-logo-with-svg-and-css-animations-dbf0802a47a1'
+        link: 'https://snowwhitelaundryroom.herokuapp.com'
       }, {
-        title: 'Creating an animated dashed line background with SVG and CSS',
+        title: 'Blog Post 1',
         date: 'July 2018',
-        link: 'https://blog.fullstackdigital.com/creating-an-animated-dashed-line-background-with-svg-and-css-170f89f47000'
+        link: 'https://snowwhitelaundryroom.herokuapp.com'
       }, {
-        title: 'Revisiting My First Pen on CodePen',
+        title: 'Blog Post 1',
         date: 'May 2018',
-        link: 'https://codepen.io/kathykato/post/revisiting-my-first-pen-on-codepen'
+        link: 'https://snowwhitelaundryroom.herokuapp.com'
       }, {
-        title: 'Creating Pure CSS Images',
+        title: 'Blog Post 1',
         date: 'January 2018',
-        link: 'https://codepen.io/kathykato/post/creating-pure-css-images'
+        link: 'https://snowwhitelaundryroom.herokuapp.com'
       }
     ]
 
@@ -65,12 +66,14 @@ class Index extends React.Component {
         <div className="container">
           <section className="grid" id="hero">
             <div className="column-xs-12">
+            <Background/>
               <h1 className="main-heading">I'm Mervyn Tan, a full-stack developer based in Singapore. I like to use tech as an enabler in our lives.</h1>
+            <Background/>
             </div>
           </section>
           <section className="grid" id="work">
           <div className="column-xs-12">
-            <h2>Here is some of the work I've done.</h2>
+            <h2>Here is some of the work that I've done.</h2>
           </div>
             {Portfolio.map(work => (
               <div className="column-xs-12 column-md-6">
