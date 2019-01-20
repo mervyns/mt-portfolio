@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Mervyn Tan',
+    title: "MT's Portfolio",
     description: 'Mervyn Tan personal portfolio site. A Full-Stack Developer skilled in Javascript, React, GraphQL',
     author: 'Mervyn Tan',
   },
@@ -27,7 +27,7 @@ module.exports = {
         background_color: '#663399',
         theme_color: '#663399',
         display: 'minimal-ui',
-        icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
+        icon: 'src/images/ming.png', // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

@@ -1,5 +1,5 @@
 import React from 'react'
-
+import logo from '../images/ming.png'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const Header = () => (
@@ -8,7 +8,7 @@ const Header = () => (
       <div className="container">
         <div className="grid">
           <div className="column-xs-7 column-md-9">
-            <span>Mervyn Tan</span>
+            <span>Mervyn Tan's Portfolio</span>
           </div>
           <div className="column-xs-5 column-md-3">
             <ul>
