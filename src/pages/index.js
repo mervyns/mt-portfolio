@@ -19,7 +19,7 @@ class Index extends React.Component {
         subtitle: 'FitNest was a project that aimed to create a portal for fitness enthusiasts to organize events and plan the workouts. It is currently built on React, Redux and a Firebase database.',
         image: imageOne,
         color: '#ffd866',
-        link: 'https://github.com/mervyns/fitnest'
+        link: 'https://fitnest.com'
       }, {
         name: 'friilii - P2P Insurance For Freelancers',
         subtitle: 'friilii was done as a Proof-Of-Concept Web Application as well as a personal project to learn and implement GraphQL in a web application. It has React on the Front-End and GraphQL and MongoDB for the Database.',
@@ -31,14 +31,20 @@ class Index extends React.Component {
         subtitle: 'RUMU was a group project done during the GA-WDI program. It is a web app that allows you to find a equidistant meeting point between group members. It is built with React on the Front-End and Ruby On Rails for the Back-End',
         image: imageThree,
         color: '#acd2ff',
-        link: 'https://github.com/mervyns/project-3-rumu'
+        link: 'https://rumu-group.herokuapp.com'
       }, {
         name: 'Snow White Laundry Room',
         subtitle: 'This was a project built for a laundromat that wanted to create a user portal for their users to keep themselves updated with promotions and activities. This was built using the MERN stack with a MongoDB database.',
         image: imageFour,
         color: '#ffdde1',
         link: 'https://snowwhitelaundryroom.herokuapp.com'
-      }
+    }, {
+      name: 'TopUpLa - WeChat e-Wallet Services',
+      subtitle: 'This was a project optimised for mobile views. It is a simple site built on React for Users to easily contact the service provider for e-Wallet services. It integrates the WhatsApp api for one-click messaging on mobile.',
+      image: imageFive,
+      color: '#aaee75',
+      link: 'https://topupla.com'
+  }
     ]
 
     const Blog = [
@@ -173,7 +179,7 @@ export const pageQuery = graphql`
       }
     }
     imageFive: file(
-      relativePath: { regex: "/portfolio-rumu-01.png/" }
+      relativePath: { regex: "/portfolio-topupla-01.png/" }
     ) {
       childImageSharp {
         fluid(
