@@ -19,7 +19,7 @@ class Index extends React.Component {
         subtitle: 'FitNest was a project that aimed to create a portal for fitness enthusiasts to organize events and plan the workouts. It is currently built on React, Redux and a Firebase database.',
         image: imageOne,
         color: '#ffd866',
-        link: 'https://fitnest.com'
+        link: 'https://fitnest.tech'
       }, {
         name: 'friilii - P2P Insurance For Freelancers',
         subtitle: 'friilii was done as a Proof-Of-Concept Web Application as well as a personal project to learn and implement GraphQL in a web application. It has React on the Front-End and GraphQL and MongoDB for the Database.',
@@ -32,13 +32,7 @@ class Index extends React.Component {
         image: imageThree,
         color: '#acd2ff',
         link: 'https://rumu-group.herokuapp.com'
-      }, {
-        name: 'Snow White Laundry Room',
-        subtitle: 'This was a project built for a laundromat that wanted to create a user portal for their users to keep themselves updated with promotions and activities. This was built using the MERN stack with a MongoDB database.',
-        image: imageFour,
-        color: '#ffdde1',
-        link: 'https://snowwhitelaundryroom.herokuapp.com'
-    }, {
+      },{
       name: 'TopUpLa - WeChat e-Wallet Services',
       subtitle: 'This was a project optimised for mobile views. It is a simple site built on React for Users to easily contact the service provider for e-Wallet services. It integrates the WhatsApp api for one-click messaging on mobile.',
       image: imageFive,
